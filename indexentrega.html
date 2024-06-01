@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrega en Progreso</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .message-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Para que esté por encima de otros elementos */
+  }
+
+  .highlight {
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #FFA500;
+    color: #fff;
+    animation: pulse 1s infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="message-container">
+  <h2 class="highlight">Entrega en Progreso</h2>
+</div>
+
+<div class="message-container" style="top: 60%;">
+  <h2 class="fade-in">Gisele estaré tratando de resolverlo el fin de semana, recién hoy conseguí una notebook prestada</h2>
+</div>
+
+</body>
+</html>
+
+
+
+
+
