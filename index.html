@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href=".//css/normalize.css">
+    <link rel="stylesheet" href=".//css/index.css">
+</head>
+<body>
+    <aside class="background--banner">
+        <video muted autoplay loop poster="img/background-image.webp">
+            <source src="img/Avengers.mp4" type="video/mp4">
+            <img src="img/background-image.webp" alt="Imagen background">
+        </video>
+        <div class="banner">
+            <div class="menu">
+                <nav>
+                    <ul class="navegacion navegacion--izquierda">
+                        <li class="logo"><a href="#"><img src="img/netflix.png" alt="Netflix"></a></li>
+                        <li><a href="#">Explorar ⏷</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Series</a></li>
+                        <li><a href="#">Peliculas</a></li>
+                        <li><a href="#">Novedades Populares</a></li>
+                        <li><a href="#">Mi Lista</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul class="navegacion navegacion--derecha">
+                        <li><a href="#"><img src="img/lupa.svg" alt="Lupa"></a></li>
+                        <li><a href="#">Región</a></li>
+                        <li><a href="#">lenguaje</a></li>
+                        <li><a href="#"><img src="img/campana.png" alt="Campana"></a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Iniciar Sesión</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Registrarse</a></li>
+                        <li class="usuario"><a href="#"><img src="img/user.png" alt="Usuario"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="imagotipo">
+                <div class="imagotipo--imagen">
+                    <img src="img/Avengers-Photoroom.png" alt="Imagotipo">
+                </div>
+                <div class="imagotipo--info">
+                    <p>⏵Play</p>
+                    <p>ⓘ More Info</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="catalogos">
+        <section class="catalogo--peliculas">
+            <h1>Películas Populares</h1>
+            <div id="carouselPopulares" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="populares"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPopulares" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselPopulares" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="catalogo--peliculas">
+            <h2>Películas de Estreno</h2>
+            <div id="carouselEstreno" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="estreno"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselEstreno" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselEstreno" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="catalogo--peliculas">
+            <h2>Películas más vistas</h2>
+            <div id="carouselVistas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="vistas"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselVistas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselVistas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--contenedor">
+            <ul class="iconos">
+                <li><a href="#"><img src="img/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="img/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="img/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="img/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+            <div class="informacion">
+                <p>Preguntas frecuentes</p>
+                <p>Prensa</p>
+                <p>Formas de ver</p>
+                <p>Preferencias de cookies</p>
+                <p>Pruebas de velocidad</p>
+                <p>Centro de ayuda</p>
+                <p>Relaciones con inversionistas</p>
+                <p>Terminos de uso</p>
+                <p>Informacion corporativa</p>
+                <p>Cuenta</p>
+                <p>Empleo</p>
+                <p>Privacidad</p>
+                <p>Contactanos</p>
+                <p>Solo en netflix</p>
+            </div>
+            <p class="idioma">🌎︎ Español - Spanish</p>
+            <p class="construccion">CAC 2024</p>
+        </div>
+    </footer>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="loginUser" class="form-label">Usuario</label>
+                            <input type="text" class="form-control" id="loginUser" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu usuario.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu contraseña.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerModalLabel">Registrarse</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerFirstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="registerFirstName" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu nombre.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerLastName" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="registerLastName" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu apellido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerDNI" class="form-label">DNI</label>
+                            <input type="text" class="form-control" id="registerDNI" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu DNI.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerBirthdate" class="form-label">Fecha de Nacimiento</label>
+                            <input type="date" class="form-control" id="registerBirthdate" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa tu fecha de nacimiento.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa un email válido.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                            <div class="invalid-feedback">
+                                Por favor, ingresa una contraseña.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerConfirmPassword" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="registerConfirmPassword" required>
+                            <div class="invalid-feedback">
+                                Por favor, confirma tu contraseña.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src=".//js/index.js"></script>
+</body>
+</html>
